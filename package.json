@@ -1,0 +1,34 @@
+{
+  "name": "taskmill-sandbox-lang-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "breadboard_sandbox_lang_nodejs": "bin/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a7medkamel/taskmill-sandbox-lang-nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/a7medkamel/taskmill-sandbox-lang-nodejs/issues"
+  },
+  "homepage": "https://github.com/a7medkamel/taskmill-sandbox-lang-nodejs#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "git-rev": "^0.2.1",
+    "lodash": "^4.17.5",
+    "mime-types": "^2.1.18",
+    "parse-git-config": "^2.0.2",
+    "taskmill-core-git": "git+https://github.com/a7medkamel/taskmill-core-git.git",
+    "taskmill-core-man": "git+https://github.com/a7medkamel/taskmill-core-man.git",
+    "winston": "^2.4.2"
+  }
+}
