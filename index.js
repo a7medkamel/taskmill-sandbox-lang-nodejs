@@ -25,7 +25,6 @@ process.on('uncaughtException', (err) => {
 
 function main() {
   // let { secret, tailf, remote, sha, base_url, cmd, args } = config.get('sandbox');
-
   Promise
     .all([
         (new HTTP()).listen({ port : 1337 })
