@@ -25,19 +25,18 @@ process.on('uncaughtException', (err) => {
 
 function main() {
   // let { secret, tailf, remote, sha, base_url, cmd, args } = config.get('sandbox');
-  Promise
-    .all([
-        (new HTTP()).listen({ port : 1337 })
-      , Repository.create()
-    ])
-    .spread((app, repo) => {
-      app.use((req, res, next) => {
+  Repository
+    .create()
+    .then((repo) => {
+      let handler = (req, res, next) => {
         (new Code({ repo }))
           .run(req, res, next)
           .catch((err) => {
             res.status(500).send(err.toString());
           });
-      });
+      };
+
+      return (new HTTP()).listen({ port : 1337, handler });
     })
     .catch((err) => {
       console.error(err);
