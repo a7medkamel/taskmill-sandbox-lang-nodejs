@@ -27,6 +27,7 @@
     "lodash": "^4.17.5",
     "mime-types": "^2.1.18",
     "parse-git-config": "^2.0.2",
+    "response-time": "^2.3.2",
     "taskmill-core-git": "git+https://github.com/a7medkamel/taskmill-core-git.git",
     "taskmill-core-man": "git+https://github.com/a7medkamel/taskmill-core-man.git",
     "winston": "^2.4.2"
