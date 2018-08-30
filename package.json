@@ -24,6 +24,7 @@
     "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "git-rev": "^0.2.1",
+    "isstream": "^0.1.2",
     "lodash": "^4.17.5",
     "mime-types": "^2.1.18",
     "parse-git-config": "^2.0.2",
