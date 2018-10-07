@@ -1,5 +1,9 @@
 from node
 
+COPY ./ /src
+
+WORKDIR /src
+
 RUN npm i -g git+https://github.com/breadboard-xyz/sandbox-bootloader.git
 
 RUN npm i -g ./
