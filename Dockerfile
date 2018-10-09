@@ -6,7 +6,8 @@ WORKDIR /src
 
 RUN npm i -g git+https://github.com/breadboard-xyz/sandbox-bootloader.git
 
-RUN npm i -g ./
+RUN npm pack && \
+    npm i -g sandbox-nodejs-1.0.0.tgz
 
 from node
 
